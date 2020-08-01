@@ -90,7 +90,7 @@ def parse_offer_details(url):
             print(traceback.format_exc())
             print("retying :", url)
 
-
+#edit this to change ASIN, condition, and shipping
 if __name__ == '__main__':
     asin = 'B00PCGHAVY'
     condition = 'new'
@@ -114,7 +114,7 @@ if __name__ == '__main__':
     data = parse_offer_details(url)
 
     for dictionary in parse_offer_details(url):
-        if dictionary['price'] == '$204.46':
+        if dictionary['price'] == '$204.46': #add price that one is looking for
             print('AYYYYY RESTOCK — sending webhook ', asin, '-sellers.csv')
             embed = Embed(
                 color=0x5CDBF0,
