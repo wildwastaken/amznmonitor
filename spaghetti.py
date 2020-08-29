@@ -1,6 +1,5 @@
 import requests
 from lxml import html
-from lxml.etree import ParserError
 import json
 from time import sleep
 import argparse
